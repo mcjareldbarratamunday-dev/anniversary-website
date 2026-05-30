@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+.font-dancing {
+  font-family: 'Dancing Script', cursive;
+}
+
+@layer utilities {
+  .text-gradient {
+    @apply bg-gradient-to-r from-romantic-pink to-romantic-rose bg-clip-text text-transparent;
+  }
+  
+  .bg-gradient-romantic {
+    @apply bg-gradient-to-br from-romantic-pink via-romantic-rose to-romantic-red;
+  }
+}
